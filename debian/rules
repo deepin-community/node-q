@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# Minify Javascript
+	uglifyjs -o q.min.js q.js
+	uglifyjs -o queue.min.js queue.js
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGES.md

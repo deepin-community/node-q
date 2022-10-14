@@ -1,0 +1,74 @@
+node-q (1.5.1-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Apply multi-arch hints. + node-q: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Replace deprecated no-uglify by uglifyjs (Closes: #979919)
+  * Remove dependency to nodejs
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 12 Jan 2021 20:49:42 +0100
+
+node-q (1.5.1-2) unstable; urgency=medium
+
+  * Declare compliance with policy 4.5.0
+  * Bump debhelper compatibility level to 12
+  * Use pkg-js-tools auto install
+  * Enable part of upstream tests
+  * Add "Rules-Requires-Root: no"
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 26 Mar 2020 13:14:37 +0100
+
+node-q (1.5.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add myself to uploaders (Closes: #792865)
+  * Change priority from extra to optional as required by policy ≥ 4.1.0
+  * Declare conformance with Policy 4.2.1
+  * Set debian/copyright format to https url
+  * Remove unnecessary testsuite
+  * Change Section from web to javascript
+  * Bump debhelper compatibility level to 10
+  * Update copyright years in copyright file
+  * Update copyright links to https
+  * Set libjs-q Multi-Arch to foreign
+  * Don't push node examples in libjs-q
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 28 Aug 2018 20:13:40 +0200
+
+node-q (1.4.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 17 May 2015 12:32:16 +0200
+
+node-q (1.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 27 Apr 2015 11:30:37 +0200
+
+node-q (1.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright years in copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 25 Apr 2015 12:01:28 +0200
+
+node-q (1.1.2-2) unstable; urgency=medium
+
+  * Add Pivotal Labs copyright for jasmine.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 09 Mar 2015 20:25:30 +0100
+
+node-q (1.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #779487)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 01 Mar 2015 13:32:11 +0100
